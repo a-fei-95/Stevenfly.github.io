@@ -1,1 +1,124 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is the head -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Steven Yang</title>
+
+  <!-- Local Bootstrap -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Local AngularJS -->
+  <script src="js/angular.min.js"></script>
+
+
+  <link rel="stylesheet" href="custom-fonts/styles.css">
+
+
+  <style>
+    body {
+      background-color: #F5F5F5;
+      padding-top: 70px;
+    }
+    h1 {
+      text-align: center;
+      color: #212121;
+      font-family: "Myriad Pro Light";
+    }
+    #announcement {
+      text-align: center;
+      color: #212121;
+    }
+    #profile_pic {
+      width: 40%;
+      height: 40%;
+    }
+    footer {
+      text-align: center;
+      color: #212121;
+      display: block;
+    }
+  </style>
+</head>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="index.html">I AM A</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+        <li><a href="apps/designer/designer.html">Designer</a></li>
+        <li><a href="apps/photographer/photographer.html">Photographer</a></li>
+        <li><a href="apps/programmer/programmer.html">Programmer</a></li>
+        <li><a href="apps/sketcher/sketcher.html">Sketcher</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="glyphicon glyphicon-flag"></span> Languages<span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a href="#">English</a></li>
+          </ul>
+
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<body>
+
+<h1>Hello Steven</h1><hr>
+<p id="announcement" title="Exciting...">I am passionate about design.</p>
+
+<img id="profile_pic" src="images/personal_pic.jpg" class="center-block img-thumbnail" alt="Profile Picture"><br>
+
+<hr>
+<div id="buttons" class="text-center">
+  <a class="btn btn-primary" href="https://ca.linkedin.com/in/steven-yang-715796a6" role="button">
+    <span class="icon icon-linkedin-square"></span> Linkedin</a>
+  <a class="btn btn-primary" href="https://github.com/Stevenfly" role="button">
+    <span class="icon icon-github"></span> Github</a>
+  <a class="btn btn-primary" href="mailto:stevenwaterloo2015@gmail.com" role="button">
+    <span class="glyphicon glyphicon-envelope"></span> Email</a>
+</div>
+
+<footer>
+  <br>
+  <p>Copyright © 2016 Steven Y.</p>
+</footer>
+
+
+
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
