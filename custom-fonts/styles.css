@@ -39,26 +39,42 @@
 }
 
 .icon-linkedin-square:before {
+  font-size: 16px;
+  vertical-align: text-bottom;
   content: "\61";
 }
 .icon-linkedin:before {
+  font-size: 16px;
+  vertical-align: text-bottom;
   content: "\62";
 }
 .icon-code-fork:before {
+  font-size: 16px;
+  vertical-align: text-bottom;
   content: "\63";
 }
 .icon-github:before {
+  font-size: 16px;
+  vertical-align: text-bottom;
   content: "\64";
 }
 .icon-github-alt:before {
+  font-size: 16px;
+  vertical-align: text-bottom;
   content: "\65";
 }
 .icon-github-square:before {
+  font-size: 16px;
+  vertical-align: text-bottom;
   content: "\66";
 }
 .icon-envelope:before {
+  font-size: 16px;
+  vertical-align: text-bottom;
   content: "\67";
 }
 .icon-envelope-o:before {
+  font-size: 16px;
+  vertical-align: text-bottom;
   content: "\68";
 }
