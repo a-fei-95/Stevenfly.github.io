@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../../custom-fonts/styles.css">
 
   <!-- My Style -->
-  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../css/sub_style.css">
 
 </head>
 
@@ -61,55 +61,90 @@
 </nav>
 
 
-<body>
-<h1>My Projects</h1>
+<body id="start">
 
-<hr>
+<div class="container-fluid">
+  <div class="row">
 
-<p>Android App:</p>
+    <div id="sidebar" class="col-sm-3 col-md-2 sidebar">
+      <ul class="nav nav-sidebar">
+        <li><a href="#start">My Projects</a></li>
+        <li><a href="#android">| Android App</a></li>
+        <li><a href="#web">| Websites</a></li>
+      </ul>
+    </div>
 
-<div class="row">
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="Apps/promoGraphic.png" alt="promoGraphic">
-      <div class="caption">
-        <h3>TicTacToe</h3>
-        <p>Android Game.</p>
-        <p>
-          <a href="https://play.google.com/store/apps/details?id=flystudio.tictactoe" class="btn btn-primary" role="button" target="_blank">Google Play</a>
-          <a href="https://github.com/Stevenfly/TicTacToe" class="btn btn-default" role="button" target="_blank">
-            <span class="icon-github"></span> Github</a>
-        </p>
-      </div>
+      <h1>My Projects</h1>
+
+      <section id="android">
+
+        <h2 class="sub-header">Android App:</h2>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="Apps/promoGraphic.png" alt="promoGraphic">
+              <div class="caption">
+                <h3>TicTacToe</h3>
+                <p>Android Game.</p>
+                <p>
+                  <a href="https://play.google.com/store/apps/details?id=flystudio.tictactoe" class="btn btn-primary" role="button" target="_blank">Google Play</a>
+                  <a href="https://github.com/Stevenfly/TicTacToe" class="btn btn-default" role="button" target="_blank">
+                    <span class="icon-github"></span> Github</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="web">
+
+        <h2 class="sub-header">Websites:</h2>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="Apps/personWeb.png" alt="personWeb">
+              <div class="caption">
+                <h3>yufeiyang.me</h3>
+                <p>The website you are viewing at.</p>
+                <p>
+                  <a href="http://yufeiyang.me" class="btn btn-primary" role="button" target="_blank">Go to</a>
+                  <a href="https://github.com/Stevenfly/Stevenfly.github.io" class="btn btn-default" role="button" target="_blank">
+                    <span class="icon-github"></span> Github</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="../../assets/tuttee_preview.jpg" alt="tuttee">
+              <div class="caption">
+                <h3>tuttee</h3>
+                <p>A tutor website. UI Contribution.</p>
+                <p>
+                  <!--<a href="#" class="btn btn-primary" role="button" target="_blank">Go to</a>-->
+                  <a href="https://github.com/tangdian/tuttee-diao" class="btn btn-default" role="button" target="_blank">
+                    <span class="icon-github"></span> Github</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </div>
   </div>
-
 </div>
-
-<hr>
-
-<p>Websites:</p>
-
-<div class="row">
-
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="Apps/personWeb.png" alt="personWeb">
-      <div class="caption">
-        <h3>yufeiyang.me</h3>
-        <p>The Website you are viewing at.</p>
-        <p>
-          <a href="http://yufeiyang.me" class="btn btn-primary" role="button" target="_blank">Go to</a>
-          <a href="https://github.com/Stevenfly/Stevenfly.github.io" class="btn btn-default" role="button" target="_blank">
-            <span class="icon-github"></span> Github</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
 
 <footer>
   <br>
@@ -119,9 +154,15 @@
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="../../js/jquery.min.js"><\/script>')</script>
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../js/ie10-viewport-bug-workaround.js"></script>
+<!-- My JavaScript
+================================================== -->
+<script src="../../js/scrollspy.js"></script>
 
 </body>
 </html>
