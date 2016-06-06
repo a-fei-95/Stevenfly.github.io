@@ -1,15 +1,15 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 body {
     background-color: #F5F5F5;
-    padding: 15px;
     margin-top: 60px;
+    margin-bottom: 80px;
 }
 
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
-.navbar-fixed-top {
+.navbar {
     border: 0;
 }
 
@@ -29,7 +29,14 @@ h1 {
     height: 40%;
 }
 
-footer {
-    text-align: center;
-    color: #212121;
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #E0E0E0;
+}
+
+.container .text-muted {
+  margin: 20px 0;
 }

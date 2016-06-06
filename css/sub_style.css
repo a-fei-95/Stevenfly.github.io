@@ -1,19 +1,25 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 body {
-  background-color: #F5F5F5;
+    background-color: #F5F5F5;
+    margin-bottom: 80px;
 }
 
 h1 {
-  text-align: center;
-  color: #212121;
-  font-family: "serif";
-  padding-top: 80px;
-  padding-bottom: 30px;
+    text-align: center;
+    color: #212121;
+    font-family: "serif";
+    padding-top: 80px;
+    padding-bottom: 30px;
 }
 
 .sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 /*
@@ -22,44 +28,52 @@ h1 {
 
 /* Hide for mobile, show later */
 .sidebar {
-  display: none;
+    display: none;
 }
 
 @media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 51px;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #ffffff;
-    border-right: 1px solid #eee;
-  }
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #ffffff;
+        border-right: 1px solid #eee;
+    }
 }
 
 /* Sidebar navigation */
 .nav-sidebar {
-  margin-right: -21px; /* 20px padding + 1px border */
-  margin-bottom: 20px;
-  margin-left: -20px;
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
 }
 .nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #616161;
+    color: #fff;
+    background-color: #616161;
 }
 
-footer {
-  text-align: center;
-  color: #212121;
+.footer {
+    position: absolute;
+    z-index: 2000;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #E0E0E0;
+}
+
+.container .text-muted {
+  margin: 20px 0;
 }
