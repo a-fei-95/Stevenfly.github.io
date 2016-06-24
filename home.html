@@ -10,12 +10,12 @@
 
   <!-- Local Bootstrap -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
-  <!-- Custom Fonts -->
-  <link rel="stylesheet" href="custom-fonts/styles.css">
+  <!-- Semantic Components -->
+  <link rel="stylesheet" type="text/css" href="node_modules/semantic-ui-button/button.min.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/semantic-ui-icon/icon.min.css">
 
   <!-- My Style -->
-  <link rel="stylesheet" href="css/home_style.css">
+  <link rel="stylesheet" href="home_style.css">
 
 </head>
 
@@ -31,7 +31,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">I AM A</a>
+      <a class="navbar-brand" href="home.html">I AM A</a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -62,21 +62,39 @@
 </nav>
 
 
-<h1>Hello Steven</h1><hr>
-<p id="announcement" title="Exciting...">I am passionate about programming and design.</p>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
 
-<img id="profile_pic" src="assets/personal_pic.jpg" class="center-block img-thumbnail" alt="Profile Picture"><br>
+        <h1 class="page-header">Hello, I am Steven!</h1>
+        <p>Candidate for Bachelor of Computer Science at University of Waterloo.</p>
+        <p>Passionate programmer and designer.</p>
 
-<hr>
-<div id="buttons" class="text-center">
-  <a class="btn btn-primary" href="https://ca.linkedin.com/in/steven-yang-715796a6" role="button" target="_blank">
-    <span class="icon-linkedin-square"></span> Linkedin</a>
-  <a class="btn btn-primary" href="https://github.com/Stevenfly" role="button" target="_blank">
-    <span class="icon-github"></span> Github</a>
-  <a class="btn btn-primary" href="assets/resume.pdf" role="button" target="_blank">
-    <span class="glyphicon glyphicon-user"></span> Résumé</a>
-  <a class="btn btn-primary" href="mailto:stevenwaterloo2015@gmail.com" role="button">
-    <span class="icon-envelope"></span> Email</a>
+        <div id="buttons">
+          <a class="ui massive circular linkedin icon button" href="https://ca.linkedin.com/in/steven-yang-715796a6" target="_blank">
+            <i class="linkedin icon"></i>
+          </a>
+          <a class="ui massive circular facebook icon button" href="https://www.facebook.com/people/Steven-Yang/100005726079999" target="_blank">
+            <i class="facebook icon"></i>
+          </a>
+          <a class="ui massive circular grey icon button" href="https://github.com/Stevenfly" target="_blank">
+            <i class="github icon"></i>
+          </a>
+          <a class="ui massive circular instagram icon button" href="https://www.instagram.com/stevenyangfly" target="_blank">
+            <i class="instagram icon"></i>
+          </a>
+          <a class="ui massive circular teal icon button" href="mailto:stevenwaterloo2015@gmail.com">
+            <i class="mail icon"></i>
+          </a>
+        </div>
+
+      </div>
+      <div class="col-xs-6 col-md-4">
+        <img id="profile_pic" class="img-responsive" src="files/personal_pic.jpg" alt="Profile Picture">
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -93,12 +111,12 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="assets/jquery.min.js"><\/script>')</script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/ie10-viewport-bug-workaround.js"></script>
 <!-- Local AngularJS -->
-<script src="js/angular.min.js"></script>
+<script src="assets/angular.min.js"></script>
 
 </body>
 
