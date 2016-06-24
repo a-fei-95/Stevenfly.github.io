@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61b57c4c-f75e-4393-9735-beee2c7111ba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/tuttee_preview.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom-fonts/fonts/custom-fonts.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom-fonts/fonts/custom-fonts.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom-fonts/fonts/custom-fonts.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom-fonts/fonts/custom-fonts.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom-fonts/icons-reference.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom-fonts/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/navbar.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/personal_pic.jpg" afterPath="$PROJECT_DIR$/files/personal_pic.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/resume.pdf" afterPath="$PROJECT_DIR$/files/resume.pdf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/home_style.css" afterPath="$PROJECT_DIR$/home_style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/sub_style.css" afterPath="$PROJECT_DIR$/apps/app_style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/angular.min.js" afterPath="$PROJECT_DIR$/assets/angular.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/ie10-viewport-bug-workaround.js" afterPath="$PROJECT_DIR$/assets/ie10-viewport-bug-workaround.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery.min.js" afterPath="$PROJECT_DIR$/assets/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/scrollspy.js" afterPath="$PROJECT_DIR$/apps/scrollspy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/designer/designer.html" afterPath="$PROJECT_DIR$/apps/designer/designer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/photographer/photographer.html" afterPath="$PROJECT_DIR$/apps/photographer/photographer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/programmer/programmer.html" afterPath="$PROJECT_DIR$/apps/programmer/programmer.html" />
@@ -45,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/home.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4568528">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.27918783">
+              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -142,9 +125,9 @@
         <option value="$PROJECT_DIR$/apps/photographer/photographer.html" />
         <option value="$PROJECT_DIR$/apps/programmer/programmer.html" />
         <option value="$PROJECT_DIR$/apps/sketcher/sketcher.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/home_style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -251,8 +234,8 @@
       <recent name="$PROJECT_DIR$/apps" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.home.html">
-    <configuration default="false" name="home.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Stevenfly.github.io/home.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Stevenfly.github.io/index.html">
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -449,11 +432,11 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -518,7 +501,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -583,7 +566,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -640,7 +623,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -689,7 +672,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -738,7 +721,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -787,7 +770,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -836,7 +819,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
@@ -970,10 +953,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4568528">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.27918783">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
           <folding />
         </state>
       </provider>
