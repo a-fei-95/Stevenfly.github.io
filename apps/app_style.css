@@ -8,6 +8,15 @@ body {
     margin-bottom: 80px;
 }
 
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 13px;
+  width: auto;
+}
+
 h1 {
     text-align: center;
     color: #212121;

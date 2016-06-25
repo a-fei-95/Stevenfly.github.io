@@ -9,6 +9,15 @@ body {
     margin-bottom: 80px;
 }
 
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 13px;
+  width: auto;
+}
+
 .navbar {
     border: 0;
 }
@@ -24,8 +33,11 @@ h1 {
 }
 
 #buttons {
-    padding-top: 6%;
-    padding-bottom: 6%;
+    padding-top: 50px;
+}
+
+#profile_pic {
+    padding-top: 30px;
 }
 
 .footer {
