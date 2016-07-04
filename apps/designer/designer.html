@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="designBoard">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Designer</title>
+  <!-- Page Title -->
+  <link rel="icon" href="../../files/my_icon.png">
+  <title>Designer | Steven</title>
 
   <!-- Local Bootstrap -->
-  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+  <!-- Local Semantic Components -->
+  <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-button/button.min.css">
+  <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-icon/icon.min.css">
+  <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-flag/flag.min.css">
+  <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-card/card.min.css">
+  <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-grid/grid.min.css">
 
   <!-- My Style -->
-  <link rel="stylesheet" href="../app_style.css">
+  <link rel="stylesheet" href="../apps.css">
 
 </head>
 
@@ -48,7 +56,8 @@
           </a>
 
           <ul class="dropdown-menu">
-            <li><a href="#">English</a></li>
+            <li><a href="#"><i class="flag ca"></i>English</a></li>
+            <!--<li><a href="#"><i class="flag cn"></i>Chinese</a></li>-->
           </ul>
 
         </li>
@@ -59,19 +68,19 @@
 </nav>
 
 
-<body id="start">
+<body id="start" ng-controller="BoardController as board">
 
 <div class="container-fluid">
   <div class="row">
 
-    <div id="sidebar" class="col-sm-3 col-md-2 sidebar">
+    <div class="col-sm-3 col-md-2 sidebar">
       <ul class="nav nav-sidebar">
         <li><a href="#start">My Design Board</a></li>
-        <li><a href="#promo">| Promotions</a></li>
-        <li><a href="#facebook">| Facebook Graphics</a></li>
-        <li><a href="#poster">| Posters</a></li>
-        <li><a href="#mgzn">| Magazine Pages</a></li>
-        <li><a href="#tshirt">| T-Shirt</a></li>
+        <li><a href="#promo"><i class="right triangle icon"></i>Promotions</a></li>
+        <li><a href="#facebook"><i class="right triangle icon"></i>Facebook Graphics</a></li>
+        <li><a href="#poster"><i class="right triangle icon"></i>Posters</a></li>
+        <li><a href="#mgzn"><i class="right triangle icon"></i>Magazine Pages</a></li>
+        <li><a href="#tshirt"><i class="right triangle icon"></i>T-Shirt</a></li>
       </ul>
     </div>
 
@@ -79,392 +88,80 @@
 
       <h1>My Design Board</h1>
 
-      <section id="promo">
-
-        <h2 class="sub-header">Promotion:</h2>
-
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/promo_amb.png" alt="2014_10_ApplicationPost02">
-              <div class="caption">
-                <h3>Ambassador Application</h3>
-                <p>October, 2014</p>
-                <p>FCSS-FESC(former OOSS) Ambassador Application promotion.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
+      <h2 id="promo" class="sub-header">Promotion:</h2>
+      <div class="ui three doubling stackable cards">
+        <!-- Repeated Cards -->
+        <div class="card" ng-repeat="promomtion in board.promotions">
+          <div class="image">
+            <img ng-src="{{promomtion.image}}" alt="{{promomtion.alter}}">
           </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/promo_initiate.png" alt="2014_10_GroupCover">
-              <div class="caption">
-                <h3>Initiate Affiliate</h3>
-                <p>January, 2015</p>
-                <p>FCSS-FESC(former OOSS) Initiate Affiliate program promotion.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
+          <div class="content">
+            <div class="header">{{promomtion.title}}</div>
+            <div class="meta">{{promomtion.time}}</div>
+            <div class="description">{{promomtion.description}}</div>
           </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/promo_1200.png" alt="2014_10_cele1200">
-              <div class="caption">
-                <h3>Facebook Graphic</h3>
-                <p>FCSS-FESC(former OOSS) Facebook Page 1200 likes promotion.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
         </div>
+      </div>
 
-      </section>
-
-      <section id="facebook">
-
-        <h2 class="sub-header">Facebook Page/Group:</h2>
-
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/group_amb.png" alt="...">
-              <div class="caption">
-                <h3>Ambassador Application</h3>
-                <p>FCSS-FESC(former OOSS) Ambassador Application Facebook group background.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
+      <h2 id="facebook" class="sub-header">Facebook Page/Group:</h2>
+      <div class="ui three doubling stackable cards">
+        <!-- Repeated Cards -->
+        <div class="card" ng-repeat="facebook in board.facebooks">
+          <div class="image">
+            <img ng-src="{{facebook.image}}" alt="{{facebook.alter}}">
           </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/group_initiate.png" alt="...">
-              <div class="caption">
-                <h3>Initiate Affiliate</h3>
-                <p>FCSS-FESC(former OOSS) Initiate Affiliate Facebook group background.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
+          <div class="content">
+            <div class="header">{{facebook.title}}</div>
+            <div class="meta">{{facebook.time}}</div>
+            <div class="description">{{facebook.description}}</div>
           </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/group_ice.png" alt="...">
-              <div class="caption">
-                <h3>ICE</h3>
-                <p>FCSS-FESC(former OOSS) ICE event Facebook group background.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
         </div>
+      </div>
 
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/group_general.png" alt="...">
-              <div class="caption">
-                <h3>OOSS General</h3>
-                <p>FCSS-FESC(former OOSS) General Facebook group background.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
+      <h2 id="poster" class="sub-header">Posters:</h2>
+      <div class="ui three doubling stackable cards">
+        <!-- Repeated Cards -->
+        <div class="card" ng-repeat="poster in board.posters">
+          <div class="image">
+            <img ng-src="{{poster.image}}" alt="{{poster.alter}}">
           </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/group_executive.png" alt="...">
-              <div class="caption">
-                <h3>OOSS Executive</h3>
-                <p>FCSS-FESC(former OOSS) Executive Facebook group background.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
+          <div class="content">
+            <div class="header">{{poster.title}}</div>
+            <div class="meta">{{poster.time}}</div>
+            <div class="description">{{poster.description}}</div>
           </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/group_marketing.png" alt="...">
-              <div class="caption">
-                <h3>OOSS Marketing</h3>
-                <p>FCSS-FESC(former OOSS) Marketing Facebook group background.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
         </div>
+      </div>
 
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/group_peer_art.png" alt="...">
-              <div class="caption">
-                <h3>Peer Mentorship - Art</h3>
-                <p>FCSS-FESC(former OOSS) Peer Mentorship program art division Facebook group background.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
+      <h2 id="mgzn" class="sub-header">Magazine Pages:</h2>
+      <div class="ui three doubling stackable cards">
+        <!-- Repeated Cards -->
+        <div class="card" ng-repeat="magazine in board.magazines">
+          <div class="image">
+            <img ng-src="{{magazine.image}}" alt="{{magazine.alter}}">
           </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/group_peer_bus.png" alt="...">
-              <div class="caption">
-                <h3>Peer Mentorship - Business</h3>
-                <p>FCSS-FESC(former OOSS) Peer Mentorship program business division Facebook group background.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
+          <div class="content">
+            <div class="header">{{magazine.title}}</div>
+            <div class="meta">{{magazine.time}}</div>
+            <div class="description">{{magazine.description}}</div>
           </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/group_peer_sci.png" alt="...">
-              <div class="caption">
-                <h3>Peer Mentorship - Science</h3>
-                <p>FCSS-FESC(former OOSS) Peer Mentorship program science division Facebook group background.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
         </div>
+      </div>
 
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/group_world_vision.png" alt="2014_10_cele1200">
-              <div class="caption">
-                <h3>Show Your Style</h3>
-                <p>World Division Music Event.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
+      <h2 id="tshirt" class="sub-header">T-shirt:</h2>
+      <div class="ui three doubling stackable cards">
+        <!-- Repeated Cards -->
+        <div class="card" ng-repeat="tshirt in board.tshirts">
+          <div class="image">
+            <img ng-src="{{tshirt.image}}" alt="{{tshirt.alter}}">
           </div>
-
+          <div class="content">
+            <div class="header">{{tshirt.title}}</div>
+            <div class="meta">{{tshirt.time}}</div>
+            <div class="description">{{tshirt.description}}</div>
+          </div>
         </div>
-
-      </section>
-
-      <section id="poster">
-
-        <h2 class="sub-header">Posters:</h2>
-
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/poster_ice.png" alt="...">
-              <div class="caption">
-                <h3>ICE</h3>
-                <p>FCSS-FESC(former OOSS) ICE event poster.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/poster_opp_fair.png" alt="...">
-              <div class="caption">
-                <h3>Opportunities Fair</h3>
-                <p>FCSS-FESC(former OOSS) Opportunities Fair event poster.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section id="mgzn">
-
-        <h2 class="sub-header">Magazine Pages:</h2>
-
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/mgzn_miss_ame.png" alt="...">
-              <div class="caption">
-                <h3>Miss America</h3>
-                <p>Abbey Park High School Magazine.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/mgzn_super_bowl.png" alt="...">
-              <div class="caption">
-                <h3>Super Bowl 2013</h3>
-                <p>Abbey Park High School Magazine.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/mgzn_food.png" alt="...">
-              <div class="caption">
-                <h3>Franken Food</h3>
-                <p>Abbey Park High School Magazine.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/mgzn_anti.png" alt="...">
-              <div class="caption">
-                <h3>Anti-Social Networking</h3>
-                <p>Abbey Park High School Magazine.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="tshirt">
-
-        <h2 class="sub-header">T-shirt:</h2>
-
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="products/t_ice.png" alt="...">
-              <div class="caption">
-                <h3>ICE</h3>
-                <p>FCSS-FESC(former OOSS) ICE event T-shirt Design.</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
+      </div>
 
     </div>
 
@@ -481,15 +178,19 @@
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/jquery.min.js"><\/script>')</script>
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
+
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../../assets/ie10-viewport-bug-workaround.js"></script>
-<!-- My JavaScript
-================================================== -->
-<script src="../scrollspy.js"></script>
+
+<!-- Local AngularJS -->
+<script src="../../assets/angular.min.js"></script>
+
+<!-- My JavaScript-->
+<script src="designer.js"></script>
+<script src="../apps.js"></script>
 
 </body>
 </html>

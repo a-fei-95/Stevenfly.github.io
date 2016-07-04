@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="photoGallery">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Photographer</title>
+  <!-- Page Title -->
+  <link rel="icon" href="../../files/my_icon.png">
+  <title>Photographer | Steven</title>
 
   <!-- Local Bootstrap -->
-  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+  <!-- Local Semantic Components -->
+  <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-button/button.min.css">
+  <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-icon/icon.min.css">
+  <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-flag/flag.min.css">
+  <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-card/card.min.css">
+  <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-grid/grid.min.css">
 
   <!-- My Style -->
-  <link rel="stylesheet" href="../app_style.css">
+  <link rel="stylesheet" href="../apps.css">
 
 </head>
 
@@ -48,7 +56,8 @@
           </a>
 
           <ul class="dropdown-menu">
-            <li><a href="#">English</a></li>
+            <li><a href="#"><i class="flag ca"></i>English</a></li>
+            <!--<li><a href="#"><i class="flag cn"></i>Chinese</a></li>-->
           </ul>
 
         </li>
@@ -59,15 +68,15 @@
 </nav>
 
 
-<body id="start">
+<body id="start" ng-controller="GalleryController as gallery">
 
 <div class="container-fluid">
   <div class="row">
 
-    <div id="sidebar" class="col-sm-3 col-md-2 sidebar">
+    <div class="col-sm-3 col-md-2 sidebar">
       <ul class="nav nav-sidebar">
         <li><a href="#start">My Photo Gallery</a></li>
-        <li><a href="#trvl">| Travelling</a></li>
+        <li><a href="#trvl"><i class="right triangle icon"></i>Travelling</a></li>
       </ul>
     </div>
 
@@ -75,114 +84,20 @@
 
       <h1>My Photo Gallery</h1>
 
-      <section id="trvl">
-
-        <h2 class="sub-header">Travelling:</h2>
-
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="photos/hong_kong_1.jpg" alt="...">
-              <div class="caption">
-                <h3>Hong Kong Overlook</h3>
-                <p>Sky100, Hong Kong, China</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
+      <h2 id="trvl" class="sub-header">Travelling:</h2>
+      <div class="ui three doubling stackable cards">
+        <!-- Repeat Cards -->
+        <div class="card" ng-repeat="travel in gallery.travels">
+          <div class="image">
+            <img ng-src="{{travel.image}}" alt="{{travel.alter}}">
           </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="photos/hong_kong_2.jpg" alt="...">
-              <div class="caption">
-                <h3>Mirror</h3>
-                <p>Chinese University of Hong Kong, Hong Kong, China</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="photos/he_hua.jpg" alt="...">
-              <div class="caption">
-                <h3>Lotus</h3>
-                <p>West Lake, Hangzhou, China</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="photos/fu_zhou.jpg" alt="...">
-              <div class="caption">
-                <h3>Sanfang Qixiang</h3>
-                <p>Sanfang Qixiang, Fuzhou, China</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="photos/orlando.jpg" alt="...">
-              <div class="caption">
-                <h3>Mickey</h3>
-                <p>Disneyland, Orlando, USA</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="photos/miami.jpg" alt="...">
-              <div class="caption">
-                <h3>Sunrise</h3>
-                <p>Miami Beach, Miami, USA</p>
-                <p>
-                  <!--
-                  <a href="#" class="btn btn-primary" role="button">View</a>
-                  <a href="#" class="btn btn-default" role="button">Like <span class="badge">0</span></a>
-                  -->
-                </p>
-              </div>
-            </div>
+          <div class="content">
+            <div class="header">{{travel.title}}</div>
+            <div class="meta">{{travel.time}}</div>
+            <div class="description">{{travel.location}}</div>
           </div>
         </div>
-
-      </section>
+      </div>
 
     </div>
   </div>
@@ -199,15 +114,19 @@
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/jquery.min.js"><\/script>')</script>
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
+
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../../assets/ie10-viewport-bug-workaround.js"></script>
-<!-- My JavaScript
-================================================== -->
-<script src="../scrollspy.js"></script>
+
+<!-- Local AngularJS -->
+<script src="../../assets/angular.min.js"></script>
+
+<!-- My JavaScript-->
+<script src="photographer.js"></script>
+<script src="../apps.js"></script>
 
 </body>
 </html>

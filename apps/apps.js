@@ -1,9 +1,9 @@
 $(document).ready(function(){
-// Add scrollspy to <body>
+    // Add scrollspy to <body>
     $('body').scrollspy({target: ".sidebar", offset: 50});
 
-// Add smooth scrolling to all links inside a navbar
-    $("#sidebar a").on('click', function(event){
+    // Add smooth scrolling to all links inside a navbar
+    $(".sidebar a").on('click', function(event){
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -24,5 +24,11 @@ $(document).ready(function(){
                 window.location.hash = hash;
             });
         }// End if statement
+    });
+    
+
+    // Add dimmer to cards
+    $('.special.cards .image').dimmer({
+        on: 'hover'
     });
 });
