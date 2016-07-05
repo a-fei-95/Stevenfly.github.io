@@ -8,7 +8,7 @@ html {
 
 body {
     background-color: #FAFAFA;
-    padding-top: 50px;
+    padding-top: 30px;
     margin-bottom: 80px;
 }
 
@@ -27,11 +27,11 @@ h1 {
 }
 
 #buttons {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 #profile_pic {
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 #featurettes {
@@ -46,7 +46,8 @@ h1 {
 ------------------------- */
 
 .navbar {
-    border: 0;
+    border-color: #9E9E9E;
+    border-bottom-width: 3px;
 }
 
 .navbar-brand {
@@ -93,14 +94,40 @@ h1 {
 ------------------------- */
 
 @media (min-width: 768px) {
+    #buttons {
+        padding-top: 30px;
+    }
+
+    #profile_pic {
+        padding-top: 40px;
+    }
+
     .featurette-heading {
         font-size: 50px;
     }
 }
 
 @media (min-width: 992px) {
+    #buttons {
+        padding-top: 30px;
+    }
+
+    #profile_pic {
+        padding-top: 40px;
+    }
+
     .featurette-heading {
         margin-top: 7%;
         margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #buttons {
+        padding-top: 50px;
+    }
+
+    #profile_pic {
+        padding-top: 20px;
     }
 }

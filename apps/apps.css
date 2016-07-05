@@ -42,13 +42,8 @@ h1 {
 ------------------------- */
 
 .navbar {
-    border: 0;
-    /*
-    opacity: 60%;
-    filter: blur(10px);
-    border-color: #4D7198;
+    border-color: #9E9E9E;
     border-bottom-width: 3px;
-    */
 }
 
 .navbar-brand {
