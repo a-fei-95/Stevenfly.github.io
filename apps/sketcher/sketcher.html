@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="sketchBook">
 
+<!-- HEAD
+======================================== -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +14,7 @@
   <title>Sketcher | Steven</title>
 
   <!-- Local Bootstrap -->
-  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
   <!-- Local Semantic Components -->
   <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-button/button.min.css">
   <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-icon/icon.min.css">
@@ -23,6 +26,12 @@
   <link rel="stylesheet" href="../apps.css">
 
 </head>
+
+
+<body id="start" ng-controller="BookController as book">
+
+<!-- NAVBAR
+======================================== -->
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -68,7 +77,8 @@
 </nav>
 
 
-<body id="start" ng-controller="BookController as book">
+<!-- CONTENTS
+======================================== -->
 
 <div class="container-fluid">
   <div class="row">
@@ -104,6 +114,9 @@
 </div>
 
 
+<!-- FOOTER
+======================================== -->
+
 <footer class="footer">
   <div class="container">
     <p class="text-muted text-center">Copyright © 2016 Steven Y.</p>
@@ -128,4 +141,5 @@
 <script src="../apps.js"></script>
 
 </body>
+
 </html>
