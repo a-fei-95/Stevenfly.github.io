@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="designBoard">
+<html lang="en" ng-app="albums">
 
 <!-- HEAD
 ======================================== -->
@@ -11,17 +11,17 @@
 
     <!-- Page Title -->
     <link rel="icon" href="../../assets/logo.png">
-    <title>Designer | Steven</title>
+    <title>Photographer | Steven</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <!-- Local Semantic Components -->
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-button/button.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-icon/icon.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-flag/flag.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-card/card.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-grid/grid.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-button/button.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-icon/icon.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-flag/flag.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-card/card.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-grid/grid.min.css">-->
 
     <!-- My Style -->
     <link rel="stylesheet" href="../apps.css">
@@ -29,7 +29,7 @@
 </head>
 
 
-<body id="start" ng-controller="BoardController as board">
+<body id="start" ng-controller="AlbumsController as gallery">
 
 <!-- NAVBAR
 ======================================== -->
@@ -47,7 +47,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="../../index.html">Home</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="../../apps/experiences/experiences.html">Experiences</a>
             </li>
             <li class="nav-item">
@@ -56,52 +56,78 @@
             <li class="nav-item">
                 <a class="nav-link" href="../../apps/designer/designer.html">Designing</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../extra/extra.html">Extra</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="/extra.html">Extra</a>
             </li>
         </ul>
     </div>
 </nav>
 
 
-<!-- CONTENTS
+<!-- Photography Jumbortron
 ======================================== -->
 
-<div class="container-fluid">
-    <div class="row">
-
-        <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-                <li><a href="#start">My Design Board</a></li>
-                <li><a href="#weather"><i class="glyphicon glyphicon-minus"></i> The Weather Network</a></li>
-                <li><a href="#tdlab"><i class="glyphicon glyphicon-minus"></i> TD Lab</a></li>
-            </ul>
-        </div>
-
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h1>My Co-op Experiences</h1>
-
-            <h2 id="weather" class="sub-header">The Weather Network:</h2>
-
-
-
-            <h2 id="tdlab" class="sub-header">TD Lab:</h2>
-
-
-
-        </div>
-
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Photography</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
     </div>
+</section>
+
+
+<!-- Photography Album
+======================================== -->
+
+
+<div class="album text-muted">
+    <!--<div class="container">-->
+        <div class="row">
+            <div class="card" ng-repeat="travel in gallery.travels">
+                <img class="img-fluid" ng-src="{{travel.image}}" alt="{{travel.alter}}">
+                <p class="card-text">{{travel.location}}</p>
+                <p class="card-text"><small>{{travel.time}}</small></p>
+            </div>
+        </div>
+    <!--</div>-->
 </div>
 
+
+<!-- Sketching Jumbortron
+======================================== -->
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Sketching</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+    </div>
+</section>
+
+
+<!-- Sketching Album
+======================================== -->
+
+
+<div class="album text-muted">
+    <!--<div class="container">-->
+    <div class="row">
+        <div class="card" ng-repeat="sketch in gallery.sketches">
+            <img class="img-fluid" ng-src="{{sketch.image}}" alt="{{sketch.alter}}">
+            <p class="card-text">{{sketch.title}}</p>
+            <p class="card-text"><small>{{sketch.description}}</small></p>
+        </div>
+    </div>
+    <!--</div>-->
+</div>
 
 <!-- FOOTER
 ======================================== -->
 
-<footer class="footer">
+<footer class="text-muted">
     <div class="container">
-        <p class="text-muted text-center">2017 | Made with <img src="../../assets/heart.png" height="16" width="16" align="middle"> by Steven Yang</p>
+        <p class="float-right">
+            <a href="#">Back to top</a>
+        </p>
+        <p>2017 | Made with <img src="../../assets/heart.png" height="16" width="16" align="middle"> by Steven Yang</p>
     </div>
 </footer>
 
@@ -119,6 +145,7 @@
 <script src="../../js/angular.min.js"></script>
 
 <!-- My JavaScript-->
+<script src="extra.js"></script>
 <script src="../apps.js"></script>
 
 </body>

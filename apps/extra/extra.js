@@ -1,12 +1,12 @@
 (function() {
-    var app = angular.module('photoGallery', []);
+    var app = angular.module('albums', []);
 
-    app.controller('GalleryController', function() {
-        this.travels = tras;
-        this.schools = schs;
+    app.controller('AlbumsController', function() {
+        this.travels = travels;
+        this.sketches = sketches;
     });
 
-    var tras = [{
+    var travels = [{
         title: "Hong Kong Overlook",
         time: "August, 2015",
         location: "Sky100, Hong Kong, China",
@@ -44,5 +44,30 @@
         alter: "sunrise"
     }];
 
-    var schs = [];
+    var sketches = [{
+        title: "Helicarrier",
+        time: "August, 2013",
+        description: "Facsimile from the movie The Avengers.",
+        image: "sketch_book/helicarrier.jpg",
+        alter: "helicarrier"
+    }, {
+        title: "Space City",
+        time: "June, 2012",
+        description: "Creation based on the book series The Three-Body Problem.",
+        image: "sketch_book/spaceCity.jpg",
+        alter: "space_city"
+    }, {
+        title: "Space Elevator",
+        time: "January, 2013",
+        description: "Creation based on the book series The Three-Body Problem.",
+        image: "sketch_book/spceEle.jpg",
+        alter: "space_elevator"
+    }, {
+        title: "Optimus Prime",
+        time: "October, 2014",
+        description: "Facsimile from fan-made graphics.",
+        image: "sketch_book/optPrime.jpg",
+        alter: "optimus prime"
+    }];
+
 })();

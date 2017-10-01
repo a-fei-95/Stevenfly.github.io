@@ -8,12 +8,24 @@ html {
 
 body {
     background-color: #FAFAFA;
-    padding-top: 30px;
-    margin-bottom: 80px;
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
 }
 
 /* Ids
 ------------------------- */
+
+#secret {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3.5rem;
+}
+
+#secret img {
+    margin-top: 1rem;
+}
 
 #announcement {
     text-align: center;
@@ -21,11 +33,11 @@ body {
 }
 
 #buttons {
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 #profile_pic {
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
 #featurettes {
@@ -36,13 +48,27 @@ body {
 }
 
 
+.jumbotron {
+    padding-bottom: 50px;
+}
+
+.col-md-5
+.img-fluid {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blockquote-footer {
+    margin-top: 1rem;
+}
+
+
 
 .alert {
-    margin-top: 56px;
+    margin-top: 3.5rem;
 }
 
 .jumbotron {
-    margin-top: 56px;
+    margin-top: 3.5rem;
 }
 
 
@@ -50,8 +76,7 @@ body {
 ------------------------- */
 
 .navbar {
-    border-color: #9E9E9E;
-    border-bottom-width: 3px;
+    margin-bottom: 0;
 }
 
 .navbar-brand {
@@ -68,35 +93,26 @@ body {
 ------------------------- */
 
 .featurette {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .featurette-divider {
-    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    margin: 5rem; /* Space out the Bootstrap <hr> more */
 }
-
-/* Thin out the marketing headings */
-/*.featurette-heading {*/
-    /*color: #616161;*/
-    /*font-weight: 400;*/
-    /*letter-spacing: -1px;*/
-/*}*/
 
 
 /* Footer
 ------------------------- */
 
-.footer {
+footer {
     position: absolute;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
     bottom: 0;
-    width: 100%;
-    height: 60px;
+    left: 0;
+    right: 0;
     background-color: #E0E0E0;
-}
-
-.container .text-muted {
-    margin: 20px 0;
 }
 
 /* Responsive
@@ -104,39 +120,32 @@ body {
 
 @media (min-width: 768px) {
     #buttons {
-        padding-top: 30px;
+        margin-top: 30px;
     }
 
     #profile_pic {
-        padding-top: 40px;
+        margin-top: 40px;
     }
 
-    .featurette-heading {
-        font-size: 50px;
-    }
 }
 
 @media (min-width: 992px) {
     #buttons {
-        padding-top: 30px;
+        margin-top: 30px;
     }
 
     #profile_pic {
-        padding-top: 40px;
+        margin-top: 40px;
     }
 
-    .featurette-heading {
-        margin-top: 7%;
-        margin-bottom: 10px;
-    }
 }
 
 @media (min-width: 1200px) {
     #buttons {
-        padding-top: 50px;
+        margin-top: 50px;
     }
 
     #profile_pic {
-        padding-top: 20px;
+        margin-top: 20px;
     }
 }

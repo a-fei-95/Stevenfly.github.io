@@ -8,24 +8,36 @@ html {
 
 body {
     background-color: #FAFAFA;
-    margin-bottom: 80px;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
 }
 
-h1 {
-    text-align: center;
-    color: #212121;
-    font-family: "serif";
-    padding-top: 80px;
-    padding-bottom: 20px;
-}
+/*h1 {*/
+    /*text-align: center;*/
+    /*color: #212121;*/
+    /*font-family: "serif";*/
+    /*padding-top: 80px;*/
+    /*padding-bottom: 20px;*/
+/*}*/
 
 
 /* Cards
 ------------------------- */
 
 
-.cards {
-    padding-bottom: 15px;
+.card {
+    width: 25rem;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+}
+
+.card > img {
+    margin-bottom: .75rem;
+}
+
+.card-text {
+    font-size: 90%;
 }
 
 
@@ -37,33 +49,71 @@ h1 {
     width: 60%;
 }
 
+/* Jumbotron
+------------------------- */
+
+.jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 60rem;
+}
+
+
+/* Album
+------------------------- */
+
+
+.album {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: #f7f7f7;
+}
+
+.album .row {
+    justify-content: center;
+}
+
 
 /* Navbar
 ------------------------- */
 
 .navbar {
-    border-color: #9E9E9E;
-    border-bottom-width: 3px;
+    margin-bottom: 0;
 }
 
 .navbar-brand {
     padding: 0;
 }
-.navbar-brand>img {
-    height: 100%;
-    padding: 13px;
-    width: auto;
-}
+/*.navbar-brand>img {*/
+    /*height: 100%;*/
+    /*padding: 13px;*/
+    /*width: auto;*/
+/*}*/
 
 
 /* Subheader
 ------------------------- */
 
-.sub-header {
-    border-bottom: 1px solid #E0E0E0;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
+/*.sub-header {*/
+    /*border-bottom: 1px solid #E0E0E0;*/
+    /*padding-bottom: 10px;*/
+    /*margin-bottom: 20px;*/
+/*}*/
 
 
 /* Sidebar
@@ -71,66 +121,63 @@ h1 {
 
 /* Hide for mobile, show later */
 
-.sidebar {
-    display: none;
-}
+/*.sidebar {*/
+    /*display: none;*/
+/*}*/
 
-/* Sidebar navigation */
+/*!* Sidebar navigation *!*/
 
-.nav-sidebar {
-    margin-right: -20px;
-    margin-bottom: 20px;
-    margin-left: -20px;
-}
+/*.nav-sidebar {*/
+    /*margin-right: -20px;*/
+    /*margin-bottom: 20px;*/
+    /*margin-left: -20px;*/
+/*}*/
 
-.nav-sidebar > li > a {
-    color: #424242;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-.nav-sidebar > li > a:hover {
-    background-color: #E0E0E0;
-}
+/*.nav-sidebar > li > a {*/
+    /*color: #424242;*/
+    /*padding-right: 20px;*/
+    /*padding-left: 20px;*/
+/*}*/
+/*.nav-sidebar > li > a:hover {*/
+    /*background-color: #E0E0E0;*/
+/*}*/
 
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-    color: #ffffff;
-    background-color: #616161;
-}
+/*.nav-sidebar > .active > a,*/
+/*.nav-sidebar > .active > a:hover,*/
+/*.nav-sidebar > .active > a:focus {*/
+    /*color: #ffffff;*/
+    /*background-color: #616161;*/
+/*}*/
 
 
 /* Footer
 ------------------------- */
 
-.footer {
+footer {
     position: absolute;
-    z-index: 2000;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
     bottom: 0;
-    width: 100%;
-    height: 60px;
+    left: 0;
+    right: 0;
     background-color: #E0E0E0;
-}
-
-.container .text-muted {
-    margin: 20px 0;
 }
 
 
 /* Responsive
 ------------------------- */
 
-@media (min-width: 768px) {
-    .sidebar {
-        position: fixed;
-        top: 50px;
-        bottom: 0;
-        left: 0;
-        z-index: 1000;
-        display: block;
-        padding-top: 20px;
-        overflow-x: hidden;
-        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-        background-color: #EEEEEE;
-    }
-}
+/*@media (min-width: 768px) {*/
+    /*.sidebar {*/
+        /*position: fixed;*/
+        /*top: 50px;*/
+        /*bottom: 0;*/
+        /*left: 0;*/
+        /*z-index: 1000;*/
+        /*display: block;*/
+        /*padding-top: 20px;*/
+        /*overflow-x: hidden;*/
+        /*overflow-y: auto; !* Scrollable contents if viewport is shorter than content. *!*/
+        /*background-color: #EEEEEE;*/
+    /*}*/
+/*}*/

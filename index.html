@@ -8,14 +8,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="icon" href="files/logo.png">
+    <link rel="icon" href="assets/logo.png">
     <title>Steven Yang</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
-    <!-- Local Bootstrap -->
-    <!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">-->
 
     <!-- Local Semantic Components -->
     <link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui-button/button.min.css">
@@ -33,16 +30,16 @@
 <!-- NAVBAR
 ======================================== -->
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="#">
-        <img class="navbar-brand" src="files/logo.png" width="30" height="30" alt="logo">
+        <img class="navbar-brand" src="assets/logo.png" width="30" height="30" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-custom" aria-controls="navbar-custom" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbar-custom">
-        <ul class="navbar-nav">
+    <div class="collapse navbar-collapse " id="navbar-custom">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -50,16 +47,18 @@
                 <a class="nav-link" href="apps/experiences/experiences.html">Experiences</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="apps/programmer/programmer.html">Projects</a>
+                <a class="nav-link" href="apps/projects/projects.html">Projects</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="apps/designer/designer.html">Designing</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="apps/photographer/photographer.html">Photography</a>
+                <a class="nav-link" href="apps/extra/extra.html">Extra</a>
             </li>
+        </ul>
+        <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="apps/sketcher/sketcher.html">Sketching</a>
+                <a class="btn btn-outline-info" href="assets/resume.pdf" role="button" target="_blank">Résumé</a>
             </li>
         </ul>
     </div>
@@ -72,10 +71,14 @@
 <!-- JUMBOTRON
 ======================================== -->
 
+<div id="secret" class="container-fluid">
+    <img class="mx-auto d-block" src="assets/logo_font_grey.png" width="25" height="25" alt="logo">
+</div>
+
 <div class="jumbotron">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-8">
+            <div class="col-md-8">
 
                 <h1 class="display-3">Hello, I am Steven!</h1>
                 <br/>
@@ -97,10 +100,11 @@
                         <i class="mail icon"></i>
                     </a>
                 </div>
-
             </div>
-            <div class="col-xs-6 col-md-4">
-                <img id="profile_pic" class="img-fluid rounded" src="files/personal_pic.jpg" alt="Profile Picture">
+
+            <div id="profile_pic" class="col-md-4">
+                <img class="img-fluid rounded" src="assets/personal_pic.jpg" alt="Profile Picture">
+                <p class="blockquote-footer text-right">Photo by Machi Li</p>
             </div>
         </div>
     </div>
@@ -114,15 +118,16 @@
 
     <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="display-4">I actually had jobs</h2>
+            <h2 class="display-4">Worked for real companies</h2>
             <br/>
             <p class="lead">At the University of Waterloo, one extremely important experience is co-ops. Throughout
-                these internship, I have had a chance to develop my practical skills in real working environments.</p>
+                these internship, I have had chances to develop my practical skills in working environments.</p>
             <br/>
             <p><a class="btn btn-primary" href="#" role="button">Learn more &raquo;</a></p>
         </div>
         <div class="col-md-5">
-            <img class="img-fluid border" src="files/featurette_coop.jpg" alt="placeholder">
+            <img class="img-fluid rounded" src="assets/featurette_coop.jpg" alt="placeholder">
+            <p class="blockquote-footer text-right">Photo by Dini Lai</p>
         </div>
     </div>
 
@@ -138,7 +143,7 @@
             <p><a class="btn btn-primary" href="#" role="button">Learn more &raquo;</a></p>
         </div>
         <div class="col-md-5">
-            <img class="img-fluid border" src="files/featurette_code.jpg" alt="placeholder">
+            <img class="img-fluid rounded" src="assets/featurette_code.jpg" alt="placeholder">
         </div>
     </div>
 
@@ -154,7 +159,7 @@
             <p><a class="btn btn-primary" href="#" role="button">Learn more &raquo;</a></p>
         </div>
         <div class="col-md-5">
-            <img class="img-fluid border" src="files/featurette_design.jpg" alt="placeholder">
+            <img class="img-fluid rounded" src="assets/featurette_design.jpg" alt="placeholder">
         </div>
     </div>
 
@@ -162,7 +167,7 @@
 
     <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="display-4">One more featurette...</h2>
+            <h2 class="display-4">One more thingy...</h2>
             <br/>
             <p class="lead">Well, I might be very busy with either my academic life or my works, I maintain interests
                 in other topics and try to explore or practice when I have the chance, including Netflix and chill.</p>
@@ -170,7 +175,8 @@
             <p><a class="btn btn-primary" href="#" role="button">Learn more &raquo;</a></p>
         </div>
         <div class="col-md-5">
-            <img class="img-fluid border" src="files/featurette_extra.jpg" alt="placeholder">
+            <img class="img-fluid rounded" src="assets/featurette_extra.jpg" alt="placeholder">
+            <p class="blockquote-footer text-right">Photo by Harper Dang</p>
         </div>
     </div>
 
@@ -180,9 +186,12 @@
 <!-- FOOTER
 ======================================== -->
 
-<footer class="footer">
+<footer class="text-muted">
     <div class="container">
-        <p class="text-muted text-center">2017 Made with <img src="./files/heart.png" height="16" width="16" align="middle"> by Steven Yang</p>
+        <p class="float-right">
+            <a href="#">Back to top</a>
+        </p>
+        <p>2017 | Made with <img src="./assets/heart.png" height="16" width="16" align="middle"> by Steven Yang</p>
     </div>
 </footer>
 
@@ -193,15 +202,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/jquery.min.js"><\/script>')</script>
-<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
-
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="assets/ie10-viewport-bug-workaround.js"></script>
+<script src="js/ie10-viewport-bug-workaround.js"></script>
 
 <!-- Local AngularJS -->
-<script src="assets/angular.min.js"></script>
+<script src="js/angular.min.js"></script>
 
 </body>
 
