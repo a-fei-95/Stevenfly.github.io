@@ -36,6 +36,16 @@ body {
 }
 
 
+
+.alert {
+    margin-top: 56px;
+}
+
+.jumbotron {
+    margin-top: 56px;
+}
+
+
 /* Navbar
 ------------------------- */
 
