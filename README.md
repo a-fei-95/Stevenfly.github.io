@@ -1,5 +1,5 @@
 <h3 align="center">
-	<img src="./files/logo_shadow.png" width="250">
+	<img src="./assets/logo_shadow.png" width="250">
 </h3>
 
 # www.yufeiyang.me
@@ -13,10 +13,9 @@ While, resume is obviously no longer enough to show off myself. So I am building
 
 - AngularJS
 - Bootstrap
-- Semantic UI
 - :heart:
 
-<br>
+### Structure
 
----
-2017 by Steve Yang
+### Next steps
+
