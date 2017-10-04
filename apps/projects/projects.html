@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <!-- Local Semantic Components -->
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-button/button.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-icon/icon.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-flag/flag.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-card/card.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-grid/grid.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-dimmer/dimmer.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-button/button.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-icon/icon.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-flag/flag.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-card/card.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-grid/grid.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-dimmer/dimmer.min.css">-->
 
     <!-- My Style -->
     <link rel="stylesheet" href="../apps.css">
@@ -44,7 +44,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbar-custom">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" href="../../index.html">Home</a>
             </li>
@@ -61,91 +61,111 @@
                 <a class="nav-link" href="../extra/extra.html">Extra</a>
             </li>
         </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="btn btn-outline-info" href="../../assets/resume.pdf" role="button" target="_blank">Résumé</a>
+            </li>
+        </ul>
     </div>
 </nav>
 
 
-<div class="alert alert-warning fixed-top" role="alert">
-    This page is currently under renovation, sorry for any inconvenience :(
+
+<!-- Mobile Jumbortron
+======================================== -->
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Mobile</h1>
+        <!--<p class="lead text-muted"></p>-->
+    </div>
+</section>
+
+
+<!-- Mobile Album
+======================================== -->
+
+
+<div class="album text-muted">
+    <!--<div class="container">-->
+    <div class="row">
+        <div class="card" ng-repeat="androidApp in projects.androidApps">
+            <img class="img-fluid" ng-src="{{androidApp.image}}" alt="{{androidApp.alter}}">
+            <p class="card-text">{{androidApp.title}}</p>
+            <p class="card-text">{{androidApp.description}}</p>
+            <a href="{{androidApp.extra_link}}" target="_blank">
+                <img id="GooglePlay" ng-src="{{androidApp.extra_image}}"/>
+            </a>
+        </div>
+    </div>
+    <!--</div>-->
 </div>
 
 
-<!-- CONTENTS
+<!-- Web Jumbortron
 ======================================== -->
 
-<div class="container-fluid">
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Web</h1>
+        <!--<p class="lead text-muted"></p>-->
+    </div>
+</section>
+
+
+<!-- Web Album
+======================================== -->
+
+
+<div class="album text-muted">
+    <!--<div class="container">-->
     <div class="row">
-
-        <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-                <li><a href="#start">My Projects</a></li>
-                <li><a href="#android"><i class="glyphicon glyphicon-minus"></i> Android App</a></li>
-                <li><a href="#web"><i class="glyphicon glyphicon-minus"></i> Websites</a></li>
-            </ul>
-        </div>
-
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h1>My Projects</h1>
-
-            <h2 id="android" class="sub-header">Android App:</h2>
-            <div class="ui three doubling stackable cards">
-                <!-- Repeated Cards -->
-                <div class="card" ng-repeat="androidApp in projects.androidApps">
-                    <div class="image">
-                        <img ng-src="{{androidApp.image}}" alt="{{androidApp.alter}}">
-                    </div>
-                    <div class="content">
-                        <div class="header">{{androidApp.title}}</div>
-                        <div class="meta">{{androidApp.time}}</div>
-                        <div class="description">{{androidApp.description}}</div>
-                    </div>
-                    <div class="extra content" align="center" ng-show="androidApp.extra">
-                        <a href="{{androidApp.extra_link}}" target="_blank">
-                            <img id="GooglePlay" ng-src="{{androidApp.extra_image}}"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <h2 id="web" class="sub-header">Websites:</h2>
-            <div class="ui special three doubling stackable cards">
-                <!-- Repeated Cards -->
-                <div class="card" ng-repeat="website in projects.websites">
-                    <div class="blurring dimmable image">
-                        <div class="ui inverted dimmer">
-                            <div class="content">
-                                <div class="center">
-                                    <a href="{{website.link}}" class="ui huge primary button" target="_blank">Go to</a>
-                                </div>
-                            </div>
-                        </div>
-                        <img ng-src="{{website.image}}" alt="{{website.alter}}">
-                    </div>
-                    <div class="content">
-                        <div class="header">{{website.title}}</div>
-                        <div class="meta">{{website.time}}</div>
-                        <div class="description">{{website.description}}</div>
-                    </div>
-                    <div class="extra content" align="center" ng-show="website.source">
-                        <a class="ui huge button" href="{{website.source_link}}" target="_blank">
-                            <i class="github icon"></i>View Source
-                        </a>
-                    </div>
-                </div>
-            </div>
-
+        <div class="card" ng-repeat="website in projects.websites">
+            <img class="img-fluid" ng-src="{{website.image}}" alt="{{website.alter}}">
+            <p class="card-text">{{website.title}}</p>
+            <p class="card-text">{{website.description}}</p>
         </div>
     </div>
+    <!--</div>-->
+</div>
+
+<!-- School Jumbortron
+======================================== -->
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">School</h1>
+        <!--<p class="lead text-muted"></p>-->
+    </div>
+</section>
+
+
+<!-- School Album
+======================================== -->
+
+
+<div class="album text-muted">
+    <!--<div class="container">-->
+    <div class="row">
+        <div class="card" ng-repeat="school in projects.schools">
+            <img class="img-fluid" ng-src="{{school.image}}" alt="{{school.alter}}">
+            <p class="card-text">{{school.title}}</p>
+            <p class="card-text">{{school.description}}</p>
+        </div>
+    </div>
+    <!--</div>-->
 </div>
 
 
 <!-- FOOTER
 ======================================== -->
 
-<footer class="footer">
+<footer class="text-muted">
     <div class="container">
-        <p class="text-muted text-center">2017 | Made with <img src="../../assets/heart.png" height="16" width="16" align="middle"> by Steven Yang</p>
+        <p class="float-right">
+            <a href="#">Back to top</a>
+        </p>
+        <p>2017 | Made with <img src="../../assets/heart.png" height="16" width="16" align="middle"> by Steven Yang</p>
     </div>
 </footer>
 

@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <!-- Local Semantic Components -->
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-button/button.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-icon/icon.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-flag/flag.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-card/card.min.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-grid/grid.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-button/button.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-icon/icon.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-flag/flag.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-card/card.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../../node_modules/semantic-ui-grid/grid.min.css">-->
 
     <!-- My Style -->
     <link rel="stylesheet" href="../apps.css">
@@ -43,7 +43,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbar-custom">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" href="../../index.html">Home</a>
             </li>
@@ -60,6 +60,11 @@
                 <a class="nav-link" href="../extra/extra.html">Extra</a>
             </li>
         </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="btn btn-outline-info" href="../../assets/resume.pdf" role="button" target="_blank">Résumé</a>
+            </li>
+        </ul>
     </div>
 </nav>
 
@@ -68,44 +73,56 @@
 </div>
 
 
-<!-- CONTENTS
+<!-- TWN Jumbortron
 ======================================== -->
 
-<div class="container-fluid">
-    <div class="row">
-
-        <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-                <li><a href="#start">My Design Board</a></li>
-                <li><a href="#weather"><i class="glyphicon glyphicon-minus"></i> The Weather Network</a></li>
-                <li><a href="#tdlab"><i class="glyphicon glyphicon-minus"></i> TD Lab</a></li>
-            </ul>
-        </div>
-
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h1>My Co-op Experiences</h1>
-
-            <h2 id="weather" class="sub-header">The Weather Network:</h2>
-
-
-
-            <h2 id="tdlab" class="sub-header">TD Lab:</h2>
-
-
-
-        </div>
-
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">The Weather Network (pelmorex, Inc.)</h1>
+        <p class="lead text-muted">Oakville, ON, Canada</p>
     </div>
+</section>
+
+
+<!-- TWN Album
+======================================== -->
+
+
+<div class="album text-muted">
+    <p>To be updated</p>
+</div>
+
+
+<!-- TD Lab Jumbortron
+======================================== -->
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">TD Lab</h1>
+        <p class="lead text-muted">Communitech</p>
+        <p class="lead text-muted">Kitchener, ON, Canada</p>
+    </div>
+</section>
+
+
+<!-- TD Lab Album
+======================================== -->
+
+
+<div class="album text-muted">
+    <p>To be updated</p>
 </div>
 
 
 <!-- FOOTER
 ======================================== -->
 
-<footer class="footer">
+<footer class="text-muted">
     <div class="container">
-        <p class="text-muted text-center">2017 | Made with <img src="../../assets/heart.png" height="16" width="16" align="middle"> by Steven Yang</p>
+        <p class="float-right">
+            <a href="#">Back to top</a>
+        </p>
+        <p>2017 | Made with <img src="../../assets/heart.png" height="16" width="16" align="middle"> by Steven Yang</p>
     </div>
 </footer>
 
