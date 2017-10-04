@@ -63,118 +63,127 @@
     </div>
 </nav>
 
-<div class="alert alert-warning fixed-top" role="alert">
-    This page is currently under renovation, sorry for any inconvenience :(
-</div>
-
-<!-- CONTENTS
+<!-- Marketing Design Jumbortron
 ======================================== -->
 
-<div class="container-fluid">
-    <div class="row">
-
-        <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-                <li><a href="#start">My Design Board</a></li>
-                <li><a href="#promo"><i class="glyphicon glyphicon-minus"></i>Promotions</a></li>
-                <li><a href="#facebook"><i class="glyphicon glyphicon-minus"></i>Facebook Graphics</a></li>
-                <li><a href="#poster"><i class="glyphicon glyphicon-minus"></i>Posters</a></li>
-                <li><a href="#mgzn"><i class="glyphicon glyphicon-minus"></i>Magazine Pages</a></li>
-                <li><a href="#tshirt"><i class="glyphicon glyphicon-minus"></i>T-Shirt</a></li>
-            </ul>
-        </div>
-
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h1>My Design Board</h1>
-
-            <h2 id="promo" class="sub-header">Promotion:</h2>
-            <div class="ui three doubling stackable cards">
-                <!-- Repeated Cards -->
-                <div class="card" ng-repeat="promomtion in board.promotions">
-                    <div class="image">
-                        <img ng-src="{{promomtion.image}}" alt="{{promomtion.alter}}">
-                    </div>
-                    <div class="content">
-                        <div class="header">{{promomtion.title}}</div>
-                        <div class="meta">{{promomtion.time}}</div>
-                        <div class="description">{{promomtion.description}}</div>
-                    </div>
-                </div>
-            </div>
-
-            <h2 id="facebook" class="sub-header">Facebook Page/Group:</h2>
-            <div class="ui three doubling stackable cards">
-                <!-- Repeated Cards -->
-                <div class="card" ng-repeat="facebook in board.facebooks">
-                    <div class="image">
-                        <img ng-src="{{facebook.image}}" alt="{{facebook.alter}}">
-                    </div>
-                    <div class="content">
-                        <div class="header">{{facebook.title}}</div>
-                        <div class="meta">{{facebook.time}}</div>
-                        <div class="description">{{facebook.description}}</div>
-                    </div>
-                </div>
-            </div>
-
-            <h2 id="poster" class="sub-header">Posters:</h2>
-            <div class="ui three doubling stackable cards">
-                <!-- Repeated Cards -->
-                <div class="card" ng-repeat="poster in board.posters">
-                    <div class="image">
-                        <img ng-src="{{poster.image}}" alt="{{poster.alter}}">
-                    </div>
-                    <div class="content">
-                        <div class="header">{{poster.title}}</div>
-                        <div class="meta">{{poster.time}}</div>
-                        <div class="description">{{poster.description}}</div>
-                    </div>
-                </div>
-            </div>
-
-            <h2 id="mgzn" class="sub-header">Magazine Pages:</h2>
-            <div class="ui three doubling stackable cards">
-                <!-- Repeated Cards -->
-                <div class="card" ng-repeat="magazine in board.magazines">
-                    <div class="image">
-                        <img ng-src="{{magazine.image}}" alt="{{magazine.alter}}">
-                    </div>
-                    <div class="content">
-                        <div class="header">{{magazine.title}}</div>
-                        <div class="meta">{{magazine.time}}</div>
-                        <div class="description">{{magazine.description}}</div>
-                    </div>
-                </div>
-            </div>
-
-            <h2 id="tshirt" class="sub-header">T-shirt:</h2>
-            <div class="ui three doubling stackable cards">
-                <!-- Repeated Cards -->
-                <div class="card" ng-repeat="tshirt in board.tshirts">
-                    <div class="image">
-                        <img ng-src="{{tshirt.image}}" alt="{{tshirt.alter}}">
-                    </div>
-                    <div class="content">
-                        <div class="header">{{tshirt.title}}</div>
-                        <div class="meta">{{tshirt.time}}</div>
-                        <div class="description">{{tshirt.description}}</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Marketing Designs</h1>
+        <!--<p class="lead text-muted"></p>-->
     </div>
+</section>
+
+
+<!-- Marketing Design Album
+======================================== -->
+
+
+<div class="album text-muted">
+    <!--<div class="container">-->
+    <div class="row">
+        <div class="card" ng-repeat="promomtion in board.promotions">
+            <img class="img-fluid" ng-src="{{promomtion.image}}" alt="{{promomtion.alter}}">
+            <p class="card-text">{{promomtion.title}}</p>
+            <p class="card-text"><small>{{promomtion.time}}</small></p>
+        </div>
+    </div>
+    <!--</div>-->
+</div>
+
+
+<!-- Facebook Banner Jumbortron
+======================================== -->
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Facebook Groups</h1>
+        <!--<p class="lead text-muted"></p>-->
+    </div>
+</section>
+
+
+<!-- Facebook Banner Album
+======================================== -->
+
+
+<div class="album text-muted">
+    <!--<div class="container">-->
+    <div class="row">
+        <div class="card" ng-repeat="facebook in board.facebooks">
+            <img class="img-fluid" ng-src="{{facebook.image}}" alt="{{facebook.alter}}">
+            <p class="card-text">{{facebook.title}}</p>
+            <p class="card-text"><small>{{facebook.time}}</small></p>
+        </div>
+    </div>
+    <!--</div>-->
+</div>
+
+
+<!-- Posters Jumbortron
+======================================== -->
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Posters</h1>
+        <!--<p class="lead text-muted"></p>-->
+    </div>
+</section>
+
+
+<!-- Posters Album
+======================================== -->
+
+
+<div class="album text-muted">
+    <!--<div class="container">-->
+    <div class="row">
+        <div class="card" ng-repeat="poster in board.posters">
+            <img class="img-fluid" ng-src="{{poster.image}}" alt="{{poster.alter}}">
+            <p class="card-text">{{poster.title}}</p>
+            <p class="card-text"><small>{{poster.time}}</small></p>
+        </div>
+    </div>
+    <!--</div>-->
+</div>
+
+
+<!-- Others Jumbortron
+======================================== -->
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Others</h1>
+        <!--<p class="lead text-muted"></p>-->
+    </div>
+</section>
+
+
+<!-- Others Album
+======================================== -->
+
+
+<div class="album text-muted">
+    <!--<div class="container">-->
+    <div class="row">
+        <div class="card" ng-repeat="tshirt in board.tshirts">
+            <img class="img-fluid" ng-src="{{tshirt.image}}" alt="{{tshirt.alter}}">
+            <p class="card-text">{{tshirt.title}}</p>
+            <p class="card-text"><small>{{tshirt.time}}</small></p>
+        </div>
+    </div>
+    <!--</div>-->
 </div>
 
 
 <!-- FOOTER
 ======================================== -->
 
-<footer class="footer">
+<footer class="text-muted">
     <div class="container">
-        <p class="text-muted text-center">2017 | Made with <img src="../../assets/heart.png" height="16" width="16" align="middle"> by Steven Yang</p>
+        <p class="float-right">
+            <a href="#">Back to top</a>
+        </p>
+        <p>2017 | Made with <img src="../../assets/heart.png" height="16" width="16" align="middle"> by Steven Yang</p>
     </div>
 </footer>
 
