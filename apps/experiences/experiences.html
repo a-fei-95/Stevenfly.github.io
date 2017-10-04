@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="designBoard">
+<html lang="en" ng-app="workExperiences">
 
 <!-- HEAD
 ======================================== -->
@@ -29,7 +29,7 @@
 </head>
 
 
-<body id="start" ng-controller="BoardController as board">
+<body id="start" ng-controller="ExperiencesController as experiences">
 
 <!-- NAVBAR
 ======================================== -->
@@ -68,9 +68,9 @@
     </div>
 </nav>
 
-<div class="alert alert-warning fixed-top" role="alert">
-    This page is currently under renovation, sorry for any inconvenience :(
-</div>
+<!--<div class="alert alert-warning fixed-top" role="alert">-->
+    <!--This page is currently under renovation, sorry for any inconvenience :(-->
+<!--</div>-->
 
 
 <!-- TWN Jumbortron
@@ -88,8 +88,20 @@
 ======================================== -->
 
 
+<!--<div class="album text-muted">-->
+    <!--<p>To be updated</p>-->
+<!--</div>-->
+
 <div class="album text-muted">
-    <p>To be updated</p>
+    <!--<div class="container">-->
+    <div class="row">
+        <div class="card" ng-repeat="weather in experiences.weathers">
+            <img class="img-fluid" ng-src="{{weather.image}}" alt="{{weather.alter}}">
+            <p class="card-text">{{weather.title}}</p>
+            <p class="card-text">{{weather.time}}</p>
+        </div>
+    </div>
+    <!--</div>-->
 </div>
 
 
@@ -109,8 +121,20 @@
 ======================================== -->
 
 
+<!--<div class="album text-muted">-->
+    <!--<p>To be updated</p>-->
+<!--</div>-->
+
 <div class="album text-muted">
-    <p>To be updated</p>
+    <!--<div class="container">-->
+    <div class="row">
+        <div class="card" ng-repeat="tdlab in experiences.tdlabs">
+            <img class="img-fluid" ng-src="{{tdlab.image}}" alt="{{tdlab.alter}}">
+            <p class="card-text">{{tdlab.title}}</p>
+            <p class="card-text">{{tdlab.time}}</p>
+        </div>
+    </div>
+    <!--</div>-->
 </div>
 
 
@@ -140,6 +164,7 @@
 <script src="../../js/angular.min.js"></script>
 
 <!-- My JavaScript-->
+<script src="experiences.js"></script>
 <script src="../apps.js"></script>
 
 </body>
