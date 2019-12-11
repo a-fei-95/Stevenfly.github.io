@@ -12,7 +12,10 @@
     <title>Steven Yang</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+          crossorigin="anonymous"
+    />
 
     <!-- Local Semantic Components -->
     <!--<link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui-button/button.min.css">-->
@@ -25,169 +28,70 @@
 </head>
 
 
-<body ng-controller="PageController as page">
+<!--<body ng-controller="PageController as page">-->
 
-<!-- NAVBAR
-======================================== -->
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">
-        <img class="navbar-brand" src="assets/logo.png" width="30" height="30" alt="logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-custom" aria-controls="navbar-custom" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- Bootstrap core JavaScript
+================================================== -->
 
-    <div class="collapse navbar-collapse " id="navbar-custom">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="apps/experiences/experiences.html">Experiences</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="apps/projects/projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="apps/designer/designer.html">Designing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="apps/extra/extra.html">Extra</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="btn btn-outline-info" href="assets/resume.pdf" role="button" target="_blank">Résumé</a>
-            </li>
-        </ul>
+<div class="construction-area">
+
+    <div class="logo">
+        <img class="mx-auto d-block" src="assets/logo.png" width="100" height="100" alt="logo">
     </div>
-</nav>
 
-<!--<div class="alert alert-warning fixed-top" role="alert">-->
-    <!--This website is currently under renovation, sorry for any inconvenience :(-->
-<!--</div>-->
+    <div class="words">
+        <p class="lead"><u>What is this?</u></p>
+        <p class="lead">You are probably looking for the personal website for some guy named <strong>Yufei Yang</strong>,
+            who goes by <strong>Steven</strong> when he's not filling a legal document. Here's his
+            <mark><a href="assets/resume.pdf" target="_blank">résumé</a></mark>.
+        </p>
+        <br/>
+        <p class="lead"><u>What happened?</u></p>
+        <p class="lead">
+            Once upon on time, Steven was a freshman and built a cool website to demonstrate his skills and
+            experiences, or so he thought.
+        </p>
+        <p class="lead">Unfortunately, as he grew both as a person and programmer, he found himself becoming more
+            <a href="https://www.urbandictionary.com/define.php?term=Cynical" target="_blank">experienced</a>.
+            He deemed his old little page no longer an accurate representation of who he was anymore.
+        </p>
+        <p class="lead">
+            He was lost.
+        </p>
+        <br/>
+        <p class="lead"><u>What will happen?</u></p>
+        <p class="lead">
+            Don't worry, he is doing just fine. He's working on something new and exciting, which will take time.
+        </p>
+        <p class="lead">
+            Meanwhile, here are some colourful buttons you can click on to learn more about him :D
+        </p>
+    </div>
 
-<!-- JUMBOTRON
-======================================== -->
+    <div class="buttons">
+        <a class="btn btn-primary" href="https://linkedin.com/in/yang-yufei" role="button" target="_blank">
+            <img class="mx-auto d-block" src="assets/icon_linkedin.png" width="32" height="32">
+        </a>
+        <a class="btn btn-dark" href="https://github.com/Stevenfly" role="button" target="_blank">
+            <img class="mx-auto d-block" src="assets/icon_github_circle.png" width="32" height="32">
+        </a>
+        <a class="btn btn-danger" href="https://www.instagram.com/stevenyangfly" role="button" target="_blank">
+            <img class="mx-auto d-block" src="assets/icon_instagram.png" width="32" height="32">
+        </a>
+        <a class="btn btn-info" href="mailto:stevenwaterloo2015@gmail.com" role="button" target="_blank">
+            <img class="mx-auto d-block" src="assets/icon_email.png" width="32" height="32">
+        </a>
+    </div>
 
-<div id="secret" class="container-fluid">
-    <img class="mx-auto d-block" src="assets/logo_font_grey.png" width="25" height="25" alt="logo">
+    <div class="footer">
+        <blockquote class="blockquote">
+            <p class="mb-0">Would I be the man in the box or the prestige?</p>
+            <footer class="blockquote-footer">Robert Angie in <cite title="Source Title">The Prestige</cite></footer>
+        </blockquote>
+    </div>
+
 </div>
-
-<div class="jumbotron">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-
-                <h1 class="display-3">Hello, I am Steven!</h1>
-                <br/>
-                <p class="lead">3rd-year student at the University of Waterloo. Computer Science, Combinatorics and Optimization.</p>
-                <p class="lead">Passionate programmer and designer. Believer in Elon Musk.</p>
-                <p class="lead">I'll leave the rest for you to explore here :)</p>
-
-                <div id="buttons">
-                    <a class="btn btn-dark" href="https://ca.linkedin.com/in/steven-yang-715796a6" role="button" target="_blank">
-                        <img class="mx-auto d-block" src="assets/icon_linkedin.png" width="24" height="24">
-                    </a>
-                    <a class="btn btn-dark" href="https://github.com/Stevenfly" role="button" target="_blank">
-                        <img class="mx-auto d-block" src="assets/icon_github_circle.png" width="24" height="24">
-                    </a>
-                    <a class="btn btn-dark" href="https://www.instagram.com/stevenyangfly" role="button" target="_blank">
-                        <img class="mx-auto d-block" src="assets/icon_instagram.png" width="24" height="24">
-                    </a>
-                    <a class="btn btn-dark" href="mailto:stevenwaterloo2015@gmail.com" role="button" target="_blank">
-                        <img class="mx-auto d-block" src="assets/icon_email.png" width="24" height="24">
-                    </a>
-                </div>
-            </div>
-
-            <div id="profile_pic" class="col-md-4">
-                <img class="img-fluid rounded" src="assets/personal_pic.jpg" alt="Profile Picture">
-                <p class="blockquote-footer text-right">Photo by Machi Li</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- FEATURETTES
-======================================== -->
-
-<section id="featurettes">
-
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="display-4">Experienced</h2>
-            <br/>
-            <p class="lead">I've had three co-ops so far and they have been tremendous experiences for me. I really enjoy what I am learning and constantly seeking new opportunities to enhance my skills or knowledge that I feel relevant to my career or my personal interests.</p>
-            <br/>
-            <p><a class="btn btn-primary" href="apps/experiences/experiences.html" role="button">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-5">
-            <img class="img-fluid rounded" src="assets/featurette_coop.jpg" alt="placeholder">
-            <p class="blockquote-footer text-right">Photo by Dini Lai</p>
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="display-4">Innovative</h2>
-            <br/>
-            <p class="lead">I never run out of ideas, I only run out of time.</p>
-            <br/>
-            <p><a class="btn btn-primary" href="apps/projects/projects.html" role="button">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-5">
-            <img class="img-fluid rounded" src="assets/featurette_code.jpg" alt="placeholder">
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="display-4">Visual</h2>
-            <br/>
-            <p class="lead">My mind loves whatever that is related to visual: design, photography, geometry, etc.</p>
-            <br/>
-            <p><a class="btn btn-primary" href="apps/designer/designer.html" role="button">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-5">
-            <img class="img-fluid rounded" src="assets/featurette_design.jpg" alt="placeholder">
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="display-4">One more thingy...</h2>
-            <br/>
-            <!--<p class="lead">I have interests.</p>-->
-            <br/>
-            <p><a class="btn btn-primary" href="apps/extra/extra.html" role="button">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-5">
-            <img class="img-fluid rounded" src="assets/featurette_extra.jpg" alt="placeholder">
-            <p class="blockquote-footer text-right">Photo by Harper Dang</p>
-        </div>
-    </div>
-
-</section>
-
-
-<!-- FOOTER
-======================================== -->
-
-<footer class="text-muted">
-    <div class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>2017 | Made with <img src="./assets/heart.png" height="16" width="16" align="middle"> by Steven Yang</p>
-    </div>
-</footer>
 
 
 <!-- Bootstrap core JavaScript
