@@ -27,12 +27,12 @@
 
 
     var webs = [{
-        title: "www.yufeiyang.me",
+        title: "www.stevenyang.name",
         time: "2016",
         description: "A personal portfolio website. Built by myself using HTML5, CSS, JavaScript, AngularJS, Bootstrap, Semantic UI, jQuery, etc. Full Contribution.",
         image: "projects/personWeb.png",
         alter: "personWeb",
-        link: "http://www.yufeiyang.me",
+        link: "http://www.stevenyang.name",
         source: true,
         source_link: "https://github.com/Stevenfly/Stevenfly.github.io"
     }, {
